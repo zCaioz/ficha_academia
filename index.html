@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Academia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app-container" id="Rotina-Treino">
+        
+        <div id="back-button">
+            <button id="back" type="button" onclick="voltar()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>  
+        </div>
+        <header>
+            <h1>Rotina de Treino</h1>
+        </header>
+
+        <form id="form-rotina">
+            <p id="form-label">Adicione sua rotina</p>
+            <div class="form-controller">
+                <input type="text" id="rotina-input" placeholder=" TREINO A,B,C ...">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        
+        <form id="form-edit" class="hide">
+            <p>Edição</p>
+            <div class="form-controller">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit">Cancelar</button>
+        </form>
+
+        <div id ="rotina-list">
+
+        </div>
+
+        <div id ="exercicios-list">
+            
+        </div>
+        
+    </div>
+</body>
+</html>
